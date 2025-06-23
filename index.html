@@ -1,189 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Full Stack Developer - Personal Page</title>
-    <style>
-       
-        * {
-            margin: 100;
-            padding: 100;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanuman Chalisa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Mukta', sans-serif;
+      background-image: url("https://gangeshwarmahadev.com/wp-content/uploads/2022/05/Hanuman-images-hd-1024x1024-1-840x840.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      position: relative;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #4bbfdf;
-            color: #201515;
-            padding: 80 20px;
-            border-radius: 50px;
-            box-shadow: #0f150f;
-        }
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      
+     
+    }
 
-        header {
-            background-color: #031623;
-            color: rgb(231, 234, 227);
-            padding: 20px 0;
-            text-align: center;
-            border-radius: 5px;
-        }
+    .chalisa-container {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-        }
+    .chalisa-container h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #FFD700;
+    }
 
-       
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    .chalisa-container p {
+      font-size: 1.2em;
+      line-height: 2;
+      text-align: center;
+      white-space: pre-wrap;
+    }
 
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: rgb(242, 248, 243);
-            padding: 10px 20px;
-            background-color: #021802;
-            border-radius: 5px;
-        }
-
-        nav ul li a:hover {
-            background-color: #4e768e;
-        }
-
-        
-        main {
-            margin: 0px auto;
-            max-width: 1200px;
-            background-color: rgb(244, 154, 218);
-            padding: 300px;
-            border-radius: 8px;
-            box-shadow: 500 400px 900px rgba(169, 93, 35, 0.1);
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        section p {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        section ul {
-            margin-top: 10px;
-            list-style-type: none;
-        }
-
-        section ul li {
-            margin: 5px 0;
-            font-size: 1rem;
-        }
-
-        .cv-download {
-            display:flex;
-            justify-content: center;
-            margin-top: px;
-        }
-
-        .cv-download button {
-            background-color: #071a07;
-            color: rgb(236, 221, 221);
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .cv-download button:hover {
-            background-color: #081e09;
-        }
-
-       
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin-bottom: 10px;
-            }
-
-            main {
-                padding: 20px;
-            }
-        }
-
-    </style>
+    @media (max-width: 600px) {
+      .chalisa-container {
+        padding: 20px;
+      }
+      .chalisa-container p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Java Full Stack Developer</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-    </ul>
-</nav>
-
-<main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello!&#128516; I'm a passionate and experienced Full Stack Java Developer with a deep understanding of web development technologies. I specialize in building scalable and maintainable applications using Java, Spring Boot, React, and more. My goal is to create robust software solutions that bring value to businesses and end-users.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java (Spring Boot, Hibernate)</li>
-            <li>Frontend: React.js, HTML, CSS, JavaScript</li>
-            <li>Database: MySQL</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Api: JDBC, JPA </li>
-            
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>I have worked with various technologies, primarily focusing on building Java-based backend systems and frontend applications. I have experience in the full development lifecycle, including requirements gathering, design, development, testing, and deployment. I am always eager to learn and keep up with the latest industry trends.</p>
-    </section>
-
-    <div class="cv-download">
-        <a href="Poornima_Patil_BE_CSE_2024_RESUMEE.pdf" download>
-            <button>Download My CV</button>
-        </a>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 Java Full Stack Developer</p>
-</footer>
-
+  <div class="chalisa-container">
+    <h1>हनुमान चालीसा</h1>
+    <p>
+        श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।
+        बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि।। 
+        बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।
+        बल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार।। 
+         
+         
+        जय हनुमान ज्ञान गुन सागर।
+        जय कपीस तिहुं लोक उजागर।।
+         
+        रामदूत अतुलित बल धामा।
+        अंजनि-पुत्र पवनसुत नामा।।
+         
+        महाबीर बिक्रम बजरंगी।
+        
+        कुमति निवार सुमति के संगी।।
+         
+        कंचन बरन बिराज सुबेसा।
+        कानन कुंडल कुंचित केसा।।
+         
+        हाथ बज्र औ ध्वजा बिराजै।
+        कांधे मूंज जनेऊ साजै।
+         
+        संकर सुवन केसरीनंदन।
+        तेज प्रताप महा जग बन्दन।।
+         
+        विद्यावान गुनी अति चातुर।
+        राम काज करिबे को आतुर।।
+         
+        प्रभु चरित्र सुनिबे को रसिया।
+        राम लखन सीता मन बसिया।।
+         
+        सूक्ष्म रूप धरि सियहिं दिखावा।
+        बिकट रूप धरि लंक जरावा।।
+         
+        भीम रूप धरि असुर संहारे।
+        रामचंद्र के काज संवारे।।
+        
+         
+        लाय सजीवन लखन जियाये।
+        श्रीरघुबीर हरषि उर लाये।।
+         
+        रघुपति कीन्ही बहुत बड़ाई।
+        तुम मम प्रिय भरतहि सम भाई।।
+         
+        सहस बदन तुम्हरो जस गावैं।
+        अस कहि श्रीपति कंठ लगावैं।।
+         
+        सनकादिक ब्रह्मादि मुनीसा।
+        नारद सारद सहित अहीसा।।
+         
+        जम कुबेर दिगपाल जहां ते।
+        कबि कोबिद कहि सके कहां ते।।
+         
+        तुम उपकार सुग्रीवहिं कीन्हा।
+        राम मिलाय राज पद दीन्हा।।
+         
+        तुम्हरो मंत्र बिभीषन माना।
+        लंकेस्वर भए सब जग जाना।।
+         
+        जुग सहस्र जोजन पर भानू।
+        
+        लील्यो ताहि मधुर फल जानू।।
+         
+        प्रभु मुद्रिका मेलि मुख माहीं।
+        जलधि लांघि गये अचरज नाहीं।।
+        
+         
+        दुर्गम काज जगत के जेते।
+        सुगम अनुग्रह तुम्हरे तेते।।
+         
+        राम दुआरे तुम रखवारे।
+        होत न आज्ञा बिनु पैसारे।।
+         
+        सब सुख लहै तुम्हारी सरना।
+        तुम रक्षक काहू को डर ना।।
+         
+        आपन तेज सम्हारो आपै।
+        तीनों लोक हांक तें कांपै।।
+         
+        भूत पिसाच निकट नहिं आवै।
+        महाबीर जब नाम सुनावै।।
+         
+        नासै रोग हरै सब पीरा।
+        जपत निरंतर हनुमत बीरा।।
+         
+        संकट तें हनुमान छुड़ावै।
+        मन क्रम बचन ध्यान जो लावै।।
+         
+        सब पर राम तपस्वी राजा।
+        तिन के काज सकल तुम साजा।
+         
+        और मनोरथ जो कोई लावै।
+        सोइ अमित जीवन फल पावै।।
+         
+        चारों जुग परताप तुम्हारा।
+        है परसिद्ध जगत उजियारा।।
+         
+        साधु-संत के तुम रखवारे।
+        
+        असुर निकंदन राम दुलारे।।
+         
+        अष्ट सिद्धि नौ निधि के दाता।
+        अस बर दीन जानकी माता।।
+         
+        राम रसायन तुम्हरे पासा।
+        सदा रहो रघुपति के दासा।।
+         
+        तुम्हरे भजन राम को पावै।
+        जनम-जनम के दुख बिसरावै।।
+         
+        अन्तकाल रघुबर पुर जाई।
+        जहां जन्म हरि-भक्त कहाई।।
+         
+        और देवता चित्त न धरई।
+        हनुमत सेइ सर्ब सुख करई।।
+         
+        संकट कटै मिटै सब पीरा।
+        जो सुमिरै हनुमत बलबीरा।।
+         
+        जै जै जै हनुमान गोसाईं।
+        कृपा करहु गुरुदेव की नाईं।।
+         
+        जो सत बार पाठ कर कोई।
+        छूटहि बंदि महा सुख होई।।
+         
+        जो यह पढ़ै हनुमान चालीसा।
+        होय सिद्धि साखी गौरीसा।।
+         
+        तुलसीदास सदा हरि चेरा।
+        कीजै नाथ हृदय मंह डेरा।। 
+        
+         
+         
+        पवन तनय संकट हरन, मंगल मूरति रूप।
+        राम लखन सीता सहित, हृदय बसहु सुर भूप।।
+    </p>
+  </div>
 </body>
 </html>
